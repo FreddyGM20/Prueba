@@ -55,7 +55,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 });
 
-app.get('/api/:municipio', (req, res) => {
+app.get('/:municipio', (req, res) => {
     const municipio = req.params.municipio;
     console.log(municipio);
     let departamento = '';
